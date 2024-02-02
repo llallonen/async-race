@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+
+  &.container {
+    margin: 20px auto;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+
+  &__item {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    background: transparent;
+    transition: all 0.5s;
+    cursor: pointer;
+
+
+    &:hover {
+      box-shadow: 0px 1px 6px 1px rgba(241, 172, 93, 0.731);
+      border: 1px solid rgb(140, 106, 31);
+    }
+
+    &--active,
+    &:active {
+      border: 1px solid rgb(140, 106, 31);
+      background-color: rgba(208, 154, 88, 0.426);
+      border: 1px solid #bb7204;
+      box-shadow: 0px 1px 4px 1px rgba(241, 147, 93, 0.731);
+    }
+  }
+}

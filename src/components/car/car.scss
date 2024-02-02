@@ -1,0 +1,68 @@
+.car {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  &__buttons {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__name {
+    margin-left: 15px;
+    font-family: 'Poiret One', cursive;
+  }
+
+  &__engine-buttons {
+    margin-top: 10px;
+  }
+
+  &__vehicle {
+    margin-top: 20px;
+  }
+
+  &__track {
+    border-bottom: 3px dashed #fff;
+  }
+
+  &.is-selected {
+    border: 1px solid red;
+  }
+}
+
+.button {
+  &--s {
+    height: 22px;
+    width: 100px;
+  }
+
+  &--xs {
+    height: 28px;
+    width: 28px;
+  }
+
+  &--start {
+    &::after {
+      content: '➽';
+      position: absolute;
+      top: calc((100% - 14px) / 2);
+      left: calc((100% - 11px) / 2);
+    }
+  }
+
+  &--stop {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: calc((100% - 9px) / 2);
+      left: calc((100% - 9px) / 2);
+      width: 9px;
+      height: 9px;
+      background-color: #fff;
+    }
+  }
+}

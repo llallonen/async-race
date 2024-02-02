@@ -1,0 +1,59 @@
+.setting {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    gap: 5px;
+  }
+
+  &__choose {
+    display: flex;
+    flex: 1;
+  }
+}
+
+input.input {
+  height: 26px;
+
+  &--text {
+    flex: 1;
+    width: auto;
+
+    &:focus {
+      outline: none !important;
+      border: 1px solid #bb7204;
+      box-shadow: 0px 1px 4px 1px rgba(241, 147, 93, 0.731);
+    }
+  }
+
+  &--color {
+    appearance: none;
+    width: 30px;
+    padding: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #784f12;
+    border-image: none;
+    background-color: transparent;
+  }
+}
+
+.button {
+  &--create,
+  &--update,
+  &--gen {
+    position: relative;
+    border: 1px solid #784f12;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      z-index: -1;
+      top: 2px;
+      left: 2px;
+      right: 2px;
+      bottom: 2px;
+      border: 1px solid #bb7204;
+    }
+  }
+}

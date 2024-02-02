@@ -1,0 +1,16 @@
+
+{
+  "compilerOptions": {
+      "target": "ES5",
+      "lib": ["es6", "dom"],
+      "strict": true,
+      "noImplicitAny": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "resolveJsonModule": true,
+  },
+  "include": ["src", "src/utils/view.ts"],
+  "exclude": ["node_modules", "public", "src/components/car/template.ts"]
+}
